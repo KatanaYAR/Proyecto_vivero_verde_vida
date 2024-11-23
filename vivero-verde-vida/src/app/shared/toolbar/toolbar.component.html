@@ -1,7 +1,8 @@
-<mat-toolbar color="primary">
-  <span>Vivero Verde Vida</span>
+<mat-toolbar class="toolbar-container">
+  <img class="logo" src="../../../assets/logo.png" alt="Vivero Verde Vida">
   <span class="spacer"></span>
-  <button mat-button routerLink="/">Inicio</button>
-  <button mat-button routerLink="/catalog">Catálogo</button>
-  <button mat-button routerLink="/contact">Contacto</button>
+  <button mat-button routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Inicio</button>
+  <button mat-button routerLink="/catalog" routerLinkActive="active-link">Catálogo</button>
+  <button mat-button routerLink="/service" routerLinkActive="active-link">Servicios</button>
 </mat-toolbar>
+
