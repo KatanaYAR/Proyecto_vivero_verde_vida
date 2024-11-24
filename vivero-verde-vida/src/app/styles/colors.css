@@ -1,0 +1,71 @@
+:root {
+  /* Colores básicos */
+  --primary-color: #2196F3;
+  --secondary-color: #FF4081;
+  --background-color-light: #f5f5f5;
+  --background-color-dark: #424242;
+  --text-color-dark: #212121;
+  --text-color-light: #ffffff;
+  --success-color: #4CAF50;
+  --warning-color: #FF9800;
+  --error-color: #F44336;
+  --neutral-color-light: #E0E0E0;
+  --neutral-color-dark: #9E9E9E;
+  --accent-color: #8BC34A;
+  --info-color: #00BCD4;
+  --disabled-color: #BDBDBD;
+
+  /* Colores personalizables */
+  --custom-color-blue-black: #021C1e; /* Azul oscuro */
+  --custom-color-blue-cadet: #004445; /* Azul cadete */
+  --custom-color-blue-crayola: #2C7873; /* Azul Crayola */
+  --custom-color-blue-green: #6FB98F; /* Azul verde */
+
+  /* Degradado principal */
+  --gradient-primary: linear-gradient(45deg, #2196F3, #64B5F6); /* Azul a Azul Claro */
+
+  /* Degradado secundario */
+  --gradient-secondary: linear-gradient(45deg, #FF4081, #F50057); /* Rosa fuerte a Rosa Claro */
+
+  /* Degradado de éxito */
+  --gradient-success: linear-gradient(45deg, #4CAF50, #8BC34A); /* Verde a Verde Claro */
+
+  /* Degradado de advertencia */
+  --gradient-warning: linear-gradient(45deg, #FF9800, #FFB74D); /* Naranja a Naranja Claro */
+
+  /* Degradado de error */
+  --gradient-error: linear-gradient(45deg, #F44336, #EF5350); /* Rojo a Rojo Claro */
+
+  /* Degradado de información */
+  --gradient-info: linear-gradient(45deg, #00BCD4, #4DD0E1); /* Cian a Cian Claro */
+
+  /* Degradado de neutral */
+  --gradient-neutral-light: linear-gradient(45deg, #E0E0E0, #BDBDBD); /* Gris Claro a Gris */
+
+  /* Degradado oscuro */
+  --gradient-neutral-dark: linear-gradient(45deg, #9E9E9E, #616161); /* Gris oscuro a Gris */
+
+  /* Degradado para fondo oscuro */
+  --gradient-background-dark: linear-gradient(45deg, #424242, #616161); /* Gris oscuro a Gris */
+
+  /* Degradado para botones o elementos con acento */
+  --gradient-accent: linear-gradient(45deg, #8BC34A, #A5D6A7); /* Verde a Verde Claro */
+
+  /* Degradado de hover para botones */
+  --gradient-hover: linear-gradient(45deg, #4CAF50, #81C784); /* Verde a Verde Pastel */
+
+  /* Degradado del texto oscuro */
+  --gradient-text-dark: linear-gradient(45deg, #212121, #757575); /* Gris oscuro a Gris medio */
+
+  /* Degradado para el fondo claro */
+  --gradient-background-light: linear-gradient(45deg, #f5f5f5, #E0E0E0); /* Blanco a Gris Claro */
+
+  /* Degradado de información para fondos */
+  --gradient-info-background: linear-gradient(45deg, #00BCD4, #B2EBF2); /* Cian a Cian Pastel */
+
+  /* Degradado para estados deshabilitados */
+  --gradient-disabled: linear-gradient(45deg, #BDBDBD, #E0E0E0); /* Gris a Gris Claro */
+
+  /* Degradado personalizable */
+  --gradient-custom: linear-gradient(45deg, #FF4081, #F50057, #FF9800); /* Degradado mixto entre rosa y naranja */
+}

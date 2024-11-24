@@ -14,7 +14,8 @@
   padding: 0 20px;
   /* background-color: #3f51b5; */
   box-shadow: 0 4px 2px -2px gray;
-  /* color: white; */
+  background: var(--custom-color-blue-black, #021C1e);
+  color: var(--text-color-light, #ffffff);
 }
 
 /* .active-link {
@@ -26,5 +27,5 @@
 .active-link {
   font-weight: bold;
   color: var(--primary-color, #4caf50);
-  border-bottom: 2px solid var(--primary-color, #4caf50);
+  border-bottom: 2px solid var(--custom-color-blue-green, #6FB98F);
 }

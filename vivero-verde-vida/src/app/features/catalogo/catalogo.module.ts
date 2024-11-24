@@ -1,17 +1,22 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+ // Asegúrese de que la ruta sea correcta
 
-import { CatalogoRoutingModule } from './catalogo-routing.module';
-import { CatalogoComponent } from './catalogo.component';
-
+import { NgModule } from "@angular/core";
+import { CatalogoComponent } from "./catalogo.component";
+import { ProductListComponent } from "../product-list/product-list.component";
+import { CommonModule } from "@angular/common";
+import { CatalogoRoutingModule } from "./catalogo-routing.module";
 
 @NgModule({
   declarations: [
-    CatalogoComponent
+    CatalogoComponent,
+    ProductListComponent, // Declarado aquí
   ],
   imports: [
     CommonModule,
-    CatalogoRoutingModule
-  ]
+    CatalogoRoutingModule,
+  ],
+  exports: [
+    ProductListComponent, // Ahora puede exportarse
+  ],
 })
-export class CatalogoModule { }
+export class CatalogoModule {}
