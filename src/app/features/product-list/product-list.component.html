@@ -1,12 +1,38 @@
-<div class="product-grid">
-  <div class="product-card" *ngFor="let product of products">
-    <img [src]="product.image" alt="{{ product.name }}" class="product-image" />
-    <div class="product-info">
-      <h3 class="product-name">{{ product.name }}</h3>
-      <p class="product-description">{{ product.description }}</p>
-      <p class="product-type">Tipo: {{ product.type }}</p>
-      <p class="product-price">Precio: ${{ product.price | number }}</p>
+<div class="product-header" >
+  <h1 class="product-header-name">Productos</h1>
+  <div class="product-header-card">
+    <img class="product-header-image" />
+    <div class="product-header-info">
+      <p class="product-header-description">
+        Descubre nuestra variedad de productos.
+      </p>
+      <div class="product-header-row">
+        <div class="product-header-filter-container">
+          <mat-icon class="icon">search</mat-icon>
+          <input
+            type="text"
+            placeholder="Filtrar productos..."
+            class="product-header-filter"
+            [(ngModel)]="filterText"
+            (input)="filterProducts()"
+          />
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
 
+
+
+<div class="product-grid">
+  <div class="product-card" *ngFor="let product of filteredProducts">
+    <img [src]="product.image" alt="{{ product.name }}" class="product-image" />
+    <div class="product-info">
+      <h3 class="product-name">{{ product.name }}</h3>
+      <p class="product-description">{{ product.description }}</p>
+      <p class="product-type">Categoría: {{ product.type }}</p>
+      <p class="product-price">Precio: ${{ product.price | number }}</p>
+    </div>
+  </div>
+</div>

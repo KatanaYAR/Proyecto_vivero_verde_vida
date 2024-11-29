@@ -18,12 +18,15 @@ import { ServicesListComponent } from './features/services-list/services-list.co
 import { ServiciosModule } from './features/servicios/servicios.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { HomeModule } from './features/home/home.module';
+import { FooterComponent } from './shared/footer/footer.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,10 @@ import { HomeModule } from './features/home/home.module';
     MatListModule,
     SlickCarouselModule,
     CatalogoModule,
-    ServiciosModule
+    ServiciosModule,
+    FormsModule,
+    MatIconModule
+    // FontAwesomeModule
 
   ],
   providers: [],

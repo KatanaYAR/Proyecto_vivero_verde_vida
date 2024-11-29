@@ -51,3 +51,102 @@
   font-weight: bold;
   color: #4CAF50;
 }
+/* Estilo general del encabezado */
+.product-header {
+  display: flex;
+  flex-direction: column; /* Apilado en móviles */
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  gap: 20px; /* Espaciado entre filas */
+}
+
+.product-header-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+.product-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+
+}
+
+/* Mantener el título a la izquierda */
+.product-header-name {
+  font-size: 24px;
+  white-space: nowrap;
+  flex-grow: 1; /* Ocupa el espacio disponible para mantenerlo a la izquierda */
+  font-weight: bold;
+  color: #666;
+}
+
+/* Estilo del contenedor del filtro */
+.product-header-filter-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.product-header-filter-container .icon{
+  color: #666;
+  font-size: 25px;
+  /* background-color: aqua; */
+  width: 40px;
+}
+
+/* Campo de texto alineado a la derecha */
+.product-header-filter {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Descripción del encabezado */
+.product-header-description {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Media Queries para pantallas grandes */
+@media (min-width: 768px) {
+  .product-header {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .product-header-card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .product-header-description {
+    text-align: left;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .product-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-header-filter {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}

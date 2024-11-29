@@ -31,6 +31,22 @@
     margin-bottom: 1.5rem;
   }
 
+
+}
+
+.container-img-mujer {
+  /* height: 1%; */
+  img {
+    width: 50%;
+    height: auto;
+    /* margin-top: 1%; */
+    border-radius: 10px;
+  }
+}
+
+.gridStats{
+
+
   button {
     width: 50%;
     height: 45px;
@@ -41,22 +57,12 @@
     font-family: Abel, sans-serif;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin: 5%;
+    /* margin: 5%; */
 
     &:hover {
       background: #6fb98f;
       color: #021c1e;
     }
-  }
-}
-
-.container-img-mujer {
-  height: 35%;
-  img {
-    width: 100%;
-    height: auto;
-    margin-top: 1%;
-    border-radius: 10px;
   }
 }
 
@@ -112,6 +118,12 @@
     }
   }
 
+  .gridStats {
+    button {
+      width: 60%;
+    }
+  }
+
   .stats-container {
     .stats-item {
       h3 {
@@ -145,6 +157,12 @@
     }
   }
 
+  .gridStats {
+    button {
+      width: 70%;
+    }
+  }
+
   .stats-container {
     flex-direction: column;
 
@@ -172,6 +190,12 @@
       font-size: 0.85rem;
     }
 
+    button {
+      width: 80%;
+    }
+  }
+
+  .gridStats {
     button {
       width: 80%;
     }

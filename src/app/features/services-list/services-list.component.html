@@ -1,5 +1,30 @@
+<div class="product-header" >
+  <h1 class="product-header-name">Productos</h1>
+  <div class="product-header-card">
+    <img class="product-header-image" />
+    <div class="product-header-info">
+      <p class="product-header-description">
+        Descubre nuestra variedad de productos.
+      </p>
+      <div class="product-header-row">
+        <div class="product-header-filter-container">
+          <mat-icon class="icon">search</mat-icon>
+          <input
+            type="text"
+            placeholder="Filtrar servicios..."
+            class="product-header-filter"
+            [(ngModel)]="filterText"
+            (input)="filterServices()"
+          />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 <div class="service-grid">
-  <div class="service-card" *ngFor="let service of services">
+  <div class="service-card" *ngFor="let service of filteredServices">
     <img [src]="service.image" alt="{{ service.name }}" class="service-image" />
     <div class="service-info">
       <h3 class="service-name">{{ service.name }}</h3>

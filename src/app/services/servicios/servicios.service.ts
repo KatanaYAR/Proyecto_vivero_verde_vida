@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { SERVICES } from '../data/mock-services';
+import { SERVICES } from 'src/app/data/mock-services';
+
 
 @Injectable({
   providedIn: 'root'
